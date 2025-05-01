@@ -50,25 +50,25 @@
 - Blue side always picks first
 - The stages are: 
 ```
-# Ban stage 1
-Blue 	-> 	  1 champion
-Red		-> 	  2 champions
-Blue 	->	  1 champion
+Ban stage 1
+|  Blue  |  1 champion  |
+|  Red   |  2 champions |
+|  Blue  |  1 champion  |
 
 Pick stage 1
-Blue 	->	  1 champion
-Red		->	  2 champions
-Blue	->	  2 champions
-Red		->	  1 champion
+|  Blue  |  1 champion  |
+|  Red   |  2 champions |
+|  Blue  |  2 champions |
+|  Red   |  1 champion  |
 
-# Ban stage 2
-Red 	-> 	  1 champion
-Blue 	-> 	  1 champion
+Ban stage 2
+|  Red   |  1 champion  |
+|  Blue  |  1 champion  |
 
 Pick stage 2
-Blue 	->	  1 champion
-Red		->	  2 champion
-Blue	->	  1 champion
+|  Blue  |  1 champion  |
+|  Red   |  2 champions |
+|  Blue  |  1 champion  |
 ```
 - When a champion is `banned` move that card to the side so that it's visible to both players
 - When a champion is `picked` the player should take the card and corresponding champion token and move it to their side of the board and make it visible to both players
