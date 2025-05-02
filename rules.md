@@ -149,6 +149,11 @@ Zed deals 10 damage to Vayne who has 9 life remaining, however the Soraka uses h
 - If the damage exceeds the the defense then deal the difference in damage to the selected champion and reduce their health accordingly. 
 
 
+### Smite
+- The Smite phase occurs as after Battle phases are complete
+- Champions who have died during the Battle phase cannot Smite
+
+
 ### End
 - Handle any `Passive` effects
 - Handle any [Champion Deaths](#champion-death)
