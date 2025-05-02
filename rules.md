@@ -265,7 +265,7 @@ and the reverse :
 # Cards
 
 ### Focus
-- Specify which enemy champion takes damage first
+- Specify which enemy champion takes damage
 
 ### Attack
 - Add 1 to attack
