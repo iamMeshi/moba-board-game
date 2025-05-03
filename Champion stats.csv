@@ -1,0 +1,20 @@
+Count,Name,Image,Health,Attack,Defense,Gold income,Initiative,Smite skill,Ultimate Name,Ultimate conditions,Ultimate cooldown,Passives
+1,Ornn,assets/champion cards/ornn.png,10,3,4,3,6,1,Ornn Horn,Any Battle phase,3,
+1,Malphite,assets/champion cards/malphite.png,10,3,4,3,6,1,Mountain Smash,Attack stage,5,
+1,Shen,assets/champion cards/shen.png,10,3,4,3,7,1,Shield,Any friendly Defense stage,4,
+1,Poppy,assets/champion cards/poppy.png,9,3,4,3,6,1,Eject,Attack stage,3,
+1,Nocturne,assets/champion cards/nocturne.png,7,4,2,3,9,3,Darkness,Any Battle phase,4,Smite
+1,Fiddlesticks,assets/champion cards/fiddlesticks.png,6,3,1,3,6,3,Crow Storm,Attack stage,3,Smite
+1,Lee Sin,assets/champion cards/lee sin.png,7,3,2,3,10,3,Dragon Kick Combo,Attack stage,3,Smite
+1,Sylas,assets/champion cards/sylas.png,6,3,2,3,7,1,Steal,Attack stage,3,
+1,Anivia,assets/champion cards/anivia.png,5,3,2,3,3,1,Blizzard,Attack stage,3,
+1,Twisted Fate,assets/champion cards/twisted fate.png,5,3,2,3,3,1,Teleport,Any phase,3,Coin trick
+1,Zed,assets/champion cards/zed.png,5,4,2,3,4,1,Death Mark,Attack stage,3,
+1,Vayne,assets/champion cards/vayne.png,5,4,1,3,4,1,Gosu,Attack stage,3,Marksman
+1,Jinx,assets/champion cards/jinx.png,5,4,1,3,4,1,,Attack stage,,Marksman
+1,Jhin,assets/champion cards/jhin.png,5,4,1,3,4,1,Curtain Call,Attack stage,3,Marksman
+1,Ashe,assets/champion cards/ashe.png,5,4,1,3,4,1,,Attack stage,,Marksman
+1,Yuumi,assets/champion cards/yuumi.png,3,1,0,2,3,1,,,3,Heal
+1,Soraka,assets/champion cards/soraka.png,4,1,0,2,3,1,Wish,Any friendly Defense stage,4,Heal
+1,Rakan,assets/champion cards/rakan.png,4,1,0,2,5,1,,,3,Heal
+1,Taric,assets/champion cards/taric.png,5,1,2,2,3,1,,,3,Heal
