@@ -79,13 +79,6 @@ Pick stage 2
 - Take turns placing each champion's token at the first tower of a lane on the respective sides of the map
 - Once the last champion has been placed in their lane the game starts
 
-
-## Deciding turn order
-- The player with the highest *total* initiative goes first
-- If initiative is tied then the player who lost the last game goes first
-- If it's the first game of a series; flip a coin / roll dice / gentlemen's agreement
-
-
 ## Phases
 
 ### Draw
@@ -104,8 +97,23 @@ Pick stage 2
 - One at a time on each champion the player can decide to move them or not
 - By default, champions can only move 1 tile per turn
 - If a player decides to move a champion then they must move the token to the adjacent target tile
-- If a player is [Recalling ](#recalling) then the token should be placed at the edge of the current tile nearest the player's Nexus
+- If a player is [Recalling](#recalling) then the token should be placed at the edge of the current tile nearest the player's Nexus
 <!-- - If a player decides to move a champion to an unwarded zone with no champions currently occupying it, then instead of moving the champion token and revealing which zone you have moved to, simply flip over the token to show the `MISSING` face.   -->
+
+
+#### Ganking
+- To gank a lane a champion must be in an adjacent tile
+- Move the champion to the desired lane 
+- Roll a dice
+- On a 3+ the ganker can join the battle phase and deal damage to enemy champions in the lane
+
+
+#### Playing safe
+- Champions in a lane can choose to play safe
+- Position the champion next to the tower 
+- If the lane is ganked, the ganker takes -1 on their gank roll (effective 4+ for successful gank)
+- Playing safe comes at the cost to getting minions 
+- Subtract 1 gold from what your champion would earn from killing minions
 
 
 ### Battle
@@ -128,29 +136,22 @@ Repeat until all champions have made their attacks
 
 
 #### Attack stage
-- The attacking player can play any number of attack augmentation cards from their hand
-- Calculate the total damage of the champion including their attack stat, items and augmentation cards
-- Declare the amount of damage you will do to the enemy champions in the lane
+- Choose a target for your attack 
+- An attack consists on a champion's attack damage + a number of dice rolls called Additional Hits
+- For each 4+ dice roll add 1 damage
+- Attacks and Champion Abilities / Ultimates that deal damage are performed in the same Attack Stage
+- They are however treated as different attacks, therefore if a champion has an item that reduces your damage by 1, that is 1 per attack type; attack, ability, ultimate
 
 
 #### Defense stage
-- The defending player can decide which of their champions is the target of the damage
-- A player may only nominate a champion to be the target of damage once per `Battle`
-- In cases where there are fewer defenders than attackers `e.g. 3v4`, the nominations are rotational. The defender must have each of their champions be nominated to receive damage before it resets and you can go back to the first champion. 
-- The defending player can play any number of defense augmentation cards from their hand
-- Be aware of `targeted damage` from Passives or from the [Focus](#focus) card. This may allow a champion's damage to specifically hit one of the opponent's champions. E.g:
-```
-You have a Zed that uses the `Assassinate` passive to deal his damage directly to the enemy Vayne, dealing 10 damage. In this case your opponent must have their Vayne handle the 10 damage and not split it among other champions in the lane.
-```
-- There is no need to specify the order of defensive cards such as [Barrier](#barrier) or the champion's that have heal, these effects are considered to work between damage being dealt. E.g:
-```
-Zed deals 10 damage to Vayne who has 9 life remaining, however the Soraka uses her ultimate to heal the Vayne for 2 health. Even if Vayne was technically full life, the heal will still mitigate the damage making Zed do an effective 8 damage and therefore the Vayne would survive.
-```
-- If the damage exceeds the the defense then deal the difference in damage to the selected champion and reduce their health accordingly. 
+- If the defending player has a Tank in the same zone they can choose to allocate the damage to them
+- Damage is first dealt to the Armour of a champion
+- After all the armour has been lost the damage starts being dealt to the health
+- Champion Armour refreshes at the start of that player's next turn but champion health can only be recovered by healing or recalling
 
 
 ### Smite
-- The Smite phase occurs as after Battle phases are complete
+- The Smite phase occurs after all Battle phases are complete
 - Champions who have died during the Battle phase cannot Smite
 
 
@@ -185,14 +186,16 @@ Zed deals 10 damage to Vayne who has 9 life remaining, however the Soraka uses h
 - When an enemy champion's health has been reduced to 0 that champion dies
 - Send the champion back to their base and collect gold
 ```
-First blood = 4g
+First blood = 5g
 Kill = 3g
 ```
 
-### Destorying towers
+### Destroying towers
 - When an enemy champion is out of lane you may choose to hit the tower
 - When the tower has been reduced to 0 life it is destroyed
 - Earn gold for the player's team
+- When attacking a tower perform a dice roll for each champion in the zone
+- On a 3 or below that champion takes 1 damage
 ```
 Tower kill = 4g
 ```
@@ -213,49 +216,26 @@ If Vayne joins the same lane as Anivia then the gold earned by turn for that zon
 - Recalling costs the champion their movement turn
 - Move the champion token to the edge of the current zone
 - At the start of their next turn the champion teleports to the base
+- Gold from minions is earned whilst recalling
 
 
 ## Buying items
 - Items can only be bought for a champion in the base
-- A champion can gold up to 6 items
+- A champion can hold up to 6 items
 
 
 # Champion Death
 - When a champion dies they return to their base zone
-- The champion remains dead for 1 turn
 - At the start of their next turn the champion respawns and can make a movement
 
 
 # Smite
-- Any champion without a `Smite` stat is considered to have a skill of 1
-- If a champion from both teams are in a zone with an Epic Monster
-- On the final turn to kill an Epic Monster it will be smited
-- Smites should be settled using a dice
-- If both Smiters have the same Smite skill then they each have a 50/50 chance
-```
-Roll a dice
-1,2,3 = Player 1 wins
-4,5,6 = Player 2 wins
-```
-- If the Smite skills are different the dice rolls change
-```
-Player 1 has Smite skill 2 
-Player 2 has Smite skill 3
-Difference = 1
-1,2 = Player 1 wins
-3+ = Player 2 wins
-```
-- A Smiter always has at least 1 chance on a dice to get the Smite 
-- The most extreme examples that can occur are:
-```
-1 = Player 1 wins
-2+ = Player 2 wins 
-
-and the reverse :
-
-5 or below = Player 1 wins
-6 = Player 2 wins
-```
+- Killing an Epic monster is performed during the Smite stage
+- Non-Jungler type champions do not have Smite and therefore contribute 1 to the Smite roll
+- Jungler type champions have Smite and control 6 to the Smite roll
+- Both players roll 2 dice each
+- Add the result and Smite contribution of all allies witin the zone
+- The highest result wins the Smite and secures the Epic monster kill
 
 # Ending a game
 - The game ends when one Nexus has been destroyed
@@ -328,9 +308,6 @@ and the reverse :
 
 # Champion stats
 
-### Initiative
-- Used at the start of the game to determine the turn order
-- Total the initiative of all of your champions and compare this against your opponent's initiative value
 
 ### Health
 - The total amount of health a champion can have
