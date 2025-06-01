@@ -108,13 +108,11 @@ Pick stage 2
 - On a 3+ the ganker can join the battle phase and deal damage to enemy champions in the lane
 
 
-#### Playing safe
-- Champions in a lane can choose to play safe
-- Position the champion next to the tower 
-- If the lane is ganked, the ganker takes -1 on their gank roll (effective 4+ for successful gank)
-- Playing safe comes at the cost to getting minions 
-- Subtract 1 gold from what your champion would earn from killing minions
+#### Play style
+- Champions in lane can choose to fight in 3 different ways; Playing Safe, Normal, Aggressive 
 
+- Safe 			= 		-1 to Gold Income and -1 to enemy Gank attempts
+- Aggressive	= 		-1 to Gold Income, +1 additional rolls on attacks, +1 to enemy gank attempts
 
 ### Battle
 - The battle phase takes place in one lane at a time
@@ -150,6 +148,28 @@ Repeat until all champions have made their attacks
 - Champion Armour refreshes at the start of that player's next turn but champion health can only be recovered by healing or recalling
 
 
+#### Tower dive
+- Extra move usuable at the end of the fighing phase
+- The target enemy must be at or below 2 health
+- Enemy champion must be in the same tile
+- Current tile must have an active tower
+
+- Charge the enemy under their tower
+- Roll a dice and follow the below table to determine the outcome
+```
+| Roll    | Damage dealt  | Damage taken  |
+|---------|---------------|---------------|
+|  1,2,3  |       0       |       2       |
+|    4    |       1       |       2       |
+|    5    |       1       |       1       |
+|    6    |       2       |       0       |
+```
+- If a champion is Tower diving both enemy base towers roll a second dice
+- A champion does not deal extra damage with the second roll
+- The roll determines if the champions takes more damage
+- If you deal damage to the base towers the attacking player can choose which tower takes the damage
+
+
 ### Smite
 - The Smite phase occurs after all Battle phases are complete
 - Champions who have died during the Battle phase cannot Smite
@@ -163,9 +183,6 @@ Repeat until all champions have made their attacks
 
 ## Earning gold
 
-- Gold is central store held by the player, not the specific champions
-- Gold earned from one lane can be used to buy items for champions in another lane
-
 ### Passives
 - A number of passives can earn gold
 - They should be handled at the start of a player's turn
@@ -173,14 +190,12 @@ Repeat until all champions have made their attacks
 ### Killing minions
 - Champions earn gold by killing minions in lane
 - The champion must be in the outer-most zone that has a standing tower in their lane
-- Once per turn, either at the start or the end, the player can claim the gold from their [Farming income](#farming-gold) stat
+- At the end of the player's turn, the player can claim the gold from their [Farming income](#farming-gold) stat
 - See [Splitting gold](#splitting-gold) section for situations where multiple champions are in a lane
 
 ### Killing jungle mobs
 - Monsters spawn in the jungle areas
-- On each quandrant there are 2 jungle camps each taking 1 turn to kill
-- For each jungle camp earn the amount of gold for the champion's [Farming income](#farming-gold) stat
-- Once a quandrant has been cleared the camps will not respawn until the champion has left the zone
+- Whilst a Jungle-type champion is in the jungle they will earn gold at the end of the player's turn
 
 ### Killing champions
 - When an enemy champion's health has been reduced to 0 that champion dies
@@ -193,7 +208,7 @@ Kill = 3g
 ### Destroying towers
 - When an enemy champion is out of lane you may choose to hit the tower
 - When the tower has been reduced to 0 life it is destroyed
-- Earn gold for the player's team
+- Gold is granted to the champions in the lane. The total remains the same but the player can choose how to divide it among those champions.
 - When attacking a tower perform a dice roll for each champion in the zone
 - On a 3 or below that champion takes 1 damage
 ```
@@ -201,15 +216,9 @@ Tower kill = 4g
 ```
 
 ### Splitting gold
-- If two champions occupy a lane they do not both collect the maximum amount of gold
-- Choose the highest [Farming income](#farming-gold) and then add 1 for every friendly champion in the same zone. 
-```
-Anivia has a gold farming stat of 4g per turn
-Vayne has a gold farming stat of 3g per turn
-If Vayne joins the same lane as Anivia then the gold earned by turn for that zone would be 4g + 1g
-```
-- The exception to this rule is any champion that has the `Support` passive
-- A `Support` will earn their [Farming income](#farming-gold) stat regardless of how many other champions are in the same zone
+- If two champions occupy a lane they do not both collect 
+- Instead, the champion with the highest gold income stat receives gold as normal and other champpions receive 0 
+- The exception to this rule is are Support-type champions who receive their gold income regardless of how many other champions are in the same zone
 
 
 # Recalling
@@ -278,32 +287,10 @@ If Vayne joins the same lane as Anivia then the gold earned by turn for that zon
 ### Demolish
 - During your attack on a tower add 3 damage to the attack
 
-### Tower dive
-- Enemy champion must be in the same tile
-- Current tile must have an active tower
-
-- Charge the enemy under their tower
-- Roll a dice and follow the below table to determine the outcome
-```
-| Roll    | Damage dealt  | Damage taken  |
-|---------|---------------|---------------|
-|  1,2,3  |       0       |       2       |
-|    4    |       2       |       2       |
-|   5,6   |       2       |       0       |
-```
-- If a champion is Tower diving both enemy base towers roll a second dice
-- A champion does not deal extra damage with the second roll
-- The roll determines if the champions takes more damage
-- If you deal damage to the base towers the attacking player can choose which tower takes the damage
-
 ### Counter-gank
 - Usable during the opponent's movement phase
 - If the opponent moves an additional champion into a lane or jungle zone
 - Move one of your champions from an adjacent zone into the one being attacked
-
-### Crit
-- Deal +50% (rounded down) damage for this Attack phase
-- Does not work on Ultimate abilities
 
 
 # Champion stats
