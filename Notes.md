@@ -1,35 +1,30 @@
-Champion card slots
-Champion Cards
+Increase stength of tank items and reduce base defense
+
+No items for jungler right now. They need tags
+
+Recalling 
+    - Happens at the next of the next fight phase
+    - Unable to fight whilst recalling
+    - Can still use their movement
 
 
-Item slots
-Item cards
+Laners can move into jungle and will gain gold as long as it isn't contested. 
+
+Laners cannot use the Gnak ability, this is Jungler only
 
 
-Stat calculators
-    - Include passives (active and inactive)
-Health tracker
-Gold tracker
+Homeguard boots
+    - Can perform a double move but cannot Attack this turn
+    - Abilities/Ultimates are still usable
 
 
-Map
+Divide map even more?
 
 
-Round counter
+Fix tank passive
+
+Write rule for hitting in tower range
 
 
-Dice
-
-<!-- Epic monsters -->
-
-
-Rework damage rule to use a damage range 
-    - Roll dice to determine damage
-    - Damage will be a range X + X number of dice > 3
-        - E.g. 1 + Roll (2,3,6) = 3
-
-
-
-Champions need a new damage profile
-Add champion ability
-Update champion ultimates
+New ability - Retreat 
+- To run back under tower

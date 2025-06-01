@@ -114,6 +114,7 @@ Pick stage 2
 - Safe 			= 		-1 to Gold Income and -1 to enemy Gank attempts
 - Aggressive	= 		-1 to Gold Income, +1 additional rolls on attacks, +1 to enemy gank attempts
 
+
 ### Battle
 - The battle phase takes place in one lane at a time
 - The current turn's player decides the order to take their battles
@@ -139,6 +140,7 @@ Repeat until all champions have made their attacks
 - For each 4+ dice roll add 1 damage
 - Attacks and Champion Abilities / Ultimates that deal damage are performed in the same Attack Stage
 - They are however treated as different attacks, therefore if a champion has an item that reduces your damage by 1, that is 1 per attack type; attack, ability, ultimate
+- This also means you can use your attacks, abilities and ultimates on different targets
 
 
 #### Defense stage
@@ -148,7 +150,7 @@ Repeat until all champions have made their attacks
 - Champion Armour refreshes at the start of that player's next turn but champion health can only be recovered by healing or recalling
 
 
-#### Tower dive
+#### Hitting in Tower range
 - Extra move usuable at the end of the fighing phase
 - The target enemy must be at or below 2 health
 - Enemy champion must be in the same tile
@@ -217,7 +219,8 @@ Tower kill = 4g
 
 ### Splitting gold
 - If two champions occupy a lane they do not both collect 
-- Instead, the champion with the highest gold income stat receives gold as normal and other champpions receive 0 
+- The player must choose which champion receives the gold
+- Gold cannot be divided among champions
 - The exception to this rule is are Support-type champions who receive their gold income regardless of how many other champions are in the same zone
 
 
@@ -226,10 +229,12 @@ Tower kill = 4g
 - Move the champion token to the edge of the current zone
 - At the start of their next turn the champion teleports to the base
 - Gold from minions is earned whilst recalling
+- Recalling champions cannot be attacked except by abilties/ultimates that state such. The only other way to attack a recalling champion is a Tower Dive
+- A successful dive cancels a recall even if it doesn't kill the champion
 
 
 ## Buying items
-- Items can only be bought for a champion in the base
+- Champion must be in the base to buy items
 - A champion can hold up to 6 items
 
 
@@ -304,9 +309,10 @@ Tower kill = 4g
 - The base damage the champion deals during an `Attack` stage
 
 ### Defense
-- The base reduction of damage taken
+- The amount of damage a champion can receive before their health starts being used
+- Defense shields refresh at the start of the player's next turn
 
-### Farming income
+### Gold income
 - The amount of gold received per turn if the champion is in a Zone with minions or jungle mobs
 - Jungle mobs exist in the jungle zones
 - Minions exist at the most-outer `Tower` that is standing in a lane
@@ -320,17 +326,13 @@ Tower kill = 4g
 - Most `Ultimates` are used during the [Battle](#battle) phase but some may be used at other times
 - Shows the number of turns it takes to `Cooldown` before it can be used again
 
-### Smite
-- The champion's ability to secure large monster objectives
-- If another champion is in the same zone, compare the two highest Smite values
-- See [Smite](#smite) for more details
-
 
 # Champion list
 
 - Ornn
 - Malphite
 - Shen
+- Poppy
 
 - Nocturne
 - Fiddlesticks
