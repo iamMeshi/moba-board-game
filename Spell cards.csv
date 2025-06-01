@@ -5,5 +5,5 @@ Count,Base Image,Item Image,Name,Description
 1,assets/Spell card base.png,assets/spell cards/counter gank.webp,Counter gank,"Played during an enemy fight phase. If your champion is 1 tile away, move that champion into the fight tile. You must fight last"
 1,assets/Spell card base.png,assets/spell cards/flash.webp,Flash,"Avoid all damage from an enemy's attacks. However, the enemy can also use Flash to chase and the damage will apply"
 1,assets/Spell card base.png,assets/spell cards/elixir of wrath.webp,Elixir of Wrath,Add 1 base damage this turn
-1,assets/Spell card base.png,assets/spell cards/barrier.webp,Barrier,Add 2 armour this turn
-1,assets/Spell card base.png,assets/spell cards/stopwatch.webp,Stopwatch,"For one of your champions, prevent all damage from 1 enemy champion's attacks this turn"
+1,assets/Spell card base.png,assets/spell cards/barrier.webp,Barrier,Add 2 Shield this turn
+1,assets/Spell card base.png,assets/spell cards/stopwatch.webp,Stopwatch,"For one of your champions, prevent ALL damage from 1 enemy this turn"
