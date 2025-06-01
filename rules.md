@@ -145,10 +145,7 @@ Repeat until all champions have made their attacks
 
 #### Defense stage
 - If the defending player has a Tank in the same zone they can choose to allocate the damage to them
-- Damage is first dealt to the Armour of a champion
-- After all the armour has been lost the damage starts being dealt to the health
-- Champion Armour refreshes at the start of that player's next turn but champion health can only be recovered by healing or recalling
-
+- Reduce health by the amount of damage dealt
 
 #### Hitting in Tower range
 - Extra move usuable at the end of the fighing phase
@@ -264,9 +261,6 @@ Tower kill = 4g
 ### Attack
 - Add 1 to attack
 
-### Block
-- Add 1 to defense
-
 ### Sacrifice
 - Nominate any of your living champions in the lane to receive the damage of the next attack, even if they have already been nominated to receive damage this turn
 
@@ -308,9 +302,9 @@ Tower kill = 4g
 ### Attack
 - The base damage the champion deals during an `Attack` stage
 
-### Defense
-- The amount of damage a champion can receive before their health starts being used
-- Defense shields refresh at the start of the player's next turn
+### Additional hits
+- Roll X number of dice
+- For each 4+ deal 1 damage
 
 ### Gold income
 - The amount of gold received per turn if the champion is in a Zone with minions or jungle mobs
