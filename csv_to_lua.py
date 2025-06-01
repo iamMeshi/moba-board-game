@@ -12,7 +12,7 @@ def csv_to_lua(input_csv, output_lua):
 
     lua_lines = ["champion_card_meta_data = {"]
     for row in rows:
-        key = row.get('Name', '').strip()``
+        key = row.get('Name', '').strip()
         if not key:
             continue
         lua_lines.append(f"  ['{key}'] = {{")
