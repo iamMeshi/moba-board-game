@@ -47,28 +47,22 @@
 
 ## Draft 
 - Players will go through `Pick` and `Ban` stages
-- Blue side always picks first
 - The stages are: 
 ```
-Ban stage 1
-|  Blue  |  1 champion  |
-|  Red   |  2 champions |
-|  Blue  |  1 champion  |
+Ban stage
+|  Player 1   |  1 champion  |
+|  Player 2   |  1 champion  |
+|  Player 1   |  1 champion  |
+|  Player 2   |  1 champion  |
 
-Pick stage 1
-|  Blue  |  1 champion  |
-|  Red   |  2 champions |
-|  Blue  |  2 champions |
-|  Red   |  1 champion  |
-
-Ban stage 2
-|  Red   |  1 champion  |
-|  Blue  |  1 champion  |
-
-Pick stage 2
-|  Blue  |  1 champion  |
-|  Red   |  2 champions |
-|  Blue  |  1 champion  |
+Pick stage
+|  Player 1   |  1 champion  |
+|  Player 2   |  2 champions |
+|  Player 1   |  2 champions |
+|  Player 2   |  1 champion  |
+|  Player 1   |  1 champion  |
+|  Player 2   |  2 champions |
+|  Player 1   |  1 champion  |
 ```
 - When a champion is `banned` move that card to the side so that it's visible to both players
 - When a champion is `picked` the player should take the card and corresponding champion token and move it to their side of the board and make it visible to both players
@@ -96,23 +90,21 @@ Pick stage 2
 ### Movement
 - One at a time on each champion the player can decide to move them or not
 - By default, champions can only move 1 tile per turn
-- If a player decides to move a champion then they must move the token to the adjacent target tile
-- If a player is [Recalling](#recalling) then the token should be placed at the edge of the current tile nearest the player's Nexus
 <!-- - If a player decides to move a champion to an unwarded zone with no champions currently occupying it, then instead of moving the champion token and revealing which zone you have moved to, simply flip over the token to show the `MISSING` face.   -->
 
 
 #### Ganking
+- This is a special ability only available to Junglers
 - To gank a lane a champion must be in an adjacent tile
-- Move the champion to the desired lane 
 - Roll a dice
-- On a 3+ the ganker can join the battle phase and deal damage to enemy champions in the lane
+- On a 3+ move the ganker to the target tile and join the battle phase
 
 
-#### Play style
+<!-- #### Play style
 - Champions in lane can choose to fight in 3 different ways; Playing Safe, Normal, Aggressive 
 
 - Safe 			= 		-1 to Gold Income and -1 to enemy Gank attempts
-- Aggressive	= 		-1 to Gold Income, +1 additional rolls on attacks, +1 to enemy gank attempts
+- Aggressive	= 		-1 to Gold Income, +1 additional rolls on attacks, +1 to enemy gank attempts -->
 
 
 ### Battle
@@ -147,26 +139,21 @@ Repeat until all champions have made their attacks
 - If the defending player has a Tank in the same zone they can choose to allocate the damage to them
 - Reduce health by the amount of damage dealt
 
-#### Hitting in Tower range
-- Extra move usuable at the end of the fighing phase
-- The target enemy must be at or below 2 health
-- Enemy champion must be in the same tile
-- Current tile must have an active tower
 
-- Charge the enemy under their tower
+#### Hitting in Tower range
+- Rather than hitting a champion, you can choose to attack the enemy tower
+- Abilities and Ultimates cannot be used on towers
+
 - Roll a dice and follow the below table to determine the outcome
 ```
-| Roll    | Damage dealt  | Damage taken  |
+| Roll    | Success/Fail  | Damage taken  |
 |---------|---------------|---------------|
-|  1,2,3  |       0       |       2       |
-|    4    |       1       |       2       |
-|    5    |       1       |       1       |
-|    6    |       2       |       0       |
+|   1,2   |     Fail      |       3       |
+|    3    |    Success    |       3       |
+|    4    |    Success    |       2       |
+|    5    |    Success    |       1       |
+|    6    |    Success    |       0       |
 ```
-- If a champion is Tower diving both enemy base towers roll a second dice
-- A champion does not deal extra damage with the second roll
-- The roll determines if the champions takes more damage
-- If you deal damage to the base towers the attacking player can choose which tower takes the damage
 
 
 ### Smite
@@ -177,7 +164,8 @@ Repeat until all champions have made their attacks
 ### End
 - Handle any `Passive` effects
 - Handle any [Champion Deaths](#champion-death)
-- Gain rewards for killed champions
+- Reward for killing minions
+- Reward for killed champions
 
 
 ## Earning gold
@@ -194,7 +182,8 @@ Repeat until all champions have made their attacks
 
 ### Killing jungle mobs
 - Monsters spawn in the jungle areas
-- Whilst a Jungle-type champion is in the jungle they will earn gold at the end of the player's turn
+- Whilst a champion is in one of the jungle areas (not rivers) they will gain their gold income as usual
+- If an enemy jungler is in the same zone you cannot earn gold
 
 ### Killing champions
 - When an enemy champion's health has been reduced to 0 that champion dies
@@ -202,14 +191,14 @@ Repeat until all champions have made their attacks
 ```
 First blood = 5g
 Kill = 3g
+Assist = 1g
 ```
 
 ### Destroying towers
-- When an enemy champion is out of lane you may choose to hit the tower
+- Can be attacked during your Fight Phase
 - When the tower has been reduced to 0 life it is destroyed
-- Gold is granted to the champions in the lane. The total remains the same but the player can choose how to divide it among those champions.
-- When attacking a tower perform a dice roll for each champion in the zone
-- On a 3 or below that champion takes 1 damage
+- Gold is granted to the champions in the lane
+- The reward gold from killing a tower can be divded among champions in the lane
 ```
 Tower kill = 4g
 ```
@@ -222,13 +211,13 @@ Tower kill = 4g
 
 
 # Recalling
-- Recalling costs the champion their movement turn
 - Move the champion token to the edge of the current zone
-- At the start of their next turn the champion teleports to the base
+- Champions that are recalling cannot fight this turn
+- At the end of your Fight Phase the champion teleports to the base
+- If the champion did not move this turn they may move after the recall
 - Gold from minions is earned whilst recalling
-- Recalling champions cannot be attacked except by abilties/ultimates that state such. The only other way to attack a recalling champion is a Tower Dive
-- A successful dive cancels a recall even if it doesn't kill the champion
-
+- During the Fight Phase an enemy champion can choose to target the recalling champion
+- If the champion takes any damage they are interupted and the recall fails
 
 ## Buying items
 - Champion must be in the base to buy items
