@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Layout combineReferences="false" width="248" height="346" buffer="0" Name="Default" defaultCount="1" dpi="100" drawBorder="true">
+    <Element variable="@[Ultimate Name]" type="Text" x="9" y="273" width="225" height="65" borderthickness="0" autoscalefont="false" lockaspect="false" keeporiginalsize="false" centerimageonorigin="false" outlinethickness="2" rotation="0" horizontalalign="1" verticalalign="1" colortype="0" opacity="255" tilesize="" mirrortype="0" imagemasksurface="false" lineheight="14" wordspace="0" justifiedtext="false" name="Ultimate" font="Calibri;15;0;0;0;0" elementcolor="0xFFFFFFFF" bordercolor="0x000000FF" backgroundcolor="0x8E67AC28" enabled="true" outlinecolor="0x000000FF" gradient="" colormatrix="" />
+    <Element variable="@[Ability Name]" type="Text" x="10" y="204" width="225" height="65" borderthickness="0" autoscalefont="false" lockaspect="false" keeporiginalsize="false" centerimageonorigin="false" outlinethickness="2" rotation="0" horizontalalign="1" verticalalign="1" colortype="0" opacity="255" tilesize="" mirrortype="0" imagemasksurface="false" lineheight="14" wordspace="0" justifiedtext="false" name="Ability" font="Calibri;15;0;0;0;0" elementcolor="0xFFFFFFFF" bordercolor="0x000000FF" backgroundcolor="0x6B788B64" enabled="true" outlinecolor="0x000000FF" gradient="" colormatrix="" />
+    <Element variable="#(switch;@[Class];Tank;&lt;fc=0x938D8DFF&gt;@[Class]&lt;/fc&gt;;Jungler;&lt;fc=0xC5CC2FFF&gt;@[Class]&lt;fc&gt;;Mage;&lt;fc=0x3CBFDFFF&gt;@[Class]&lt;fc&gt;;Fighter;&lt;fc=0xFC8528FF&gt;@[Class]&lt;fc&gt;;Marksman;&lt;fc=0xFF6161FF&gt;@[Class]&lt;fc&gt;;Support;&lt;fc=0x9CD981FF&gt;@[Class]&lt;fc&gt;;Support / Tank;&lt;fc=0x9CD981FF&gt;@[Class]&lt;fc&gt;;#default;)#" type="FormattedText" x="117" y="163" width="117" height="40" borderthickness="0" autoscalefont="false" lockaspect="false" keeporiginalsize="false" centerimageonorigin="false" outlinethickness="1" rotation="0" horizontalalign="2" verticalalign="2" colortype="0" opacity="255" tilesize="" mirrortype="0" imagemasksurface="false" lineheight="14" wordspace="0" justifiedtext="false" name="Class" font="Arial;10;0;0;0;0" elementcolor="0xFFFFFFFF" bordercolor="0x000000FF" backgroundcolor="0x00000000" enabled="true" outlinecolor="0x000000FF" gradient="" colormatrix="" />
+    <Element variable="@[image]" type="Graphic" x="0" y="0" width="248" height="346" borderthickness="0" autoscalefont="false" lockaspect="false" keeporiginalsize="false" centerimageonorigin="false" outlinethickness="0" rotation="0" horizontalalign="0" verticalalign="0" colortype="0" opacity="255" tilesize="" mirrortype="0" imagemasksurface="false" lineheight="14" wordspace="0" justifiedtext="false" name="Image" font="Arial;12;0;0;0;0" elementcolor="0x000000FF" bordercolor="0x000000FF" backgroundcolor="0x00000000" enabled="true" outlinecolor="0x000000FF" gradient="" colormatrix="" />
+    <Reference RelativePath="Champion stats.csv" Default="true" />
+    <exportRotation>0</exportRotation>
+    <exportTransparentBackground>false</exportTransparentBackground>
+    <exportPDFAsPageBack>false</exportPDFAsPageBack>
+    <exportWidth>0</exportWidth>
+    <exportHeight>0</exportHeight>
+    <zoom>2.17052</zoom>
+    <exportLayoutBorder>false</exportLayoutBorder>
+    <exportLayoutBorderCrossSize>0</exportLayoutBorderCrossSize>
+  </Layout>
+  <translatorName>Incept</translatorName>
+  <lastExportPath>C:\Users\Andy\Desktop\source\board games\moba\cards\champions</lastExportPath>
+  <jsTildeMeansCode>true</jsTildeMeansCode>
+  <jsKeepFunctions>true</jsKeepFunctions>
+  <jsSingleQuoteStartsCode>true</jsSingleQuoteStartsCode>
+  <collapsedNodes />
+</Project>
